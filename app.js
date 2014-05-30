@@ -64,7 +64,6 @@ app.use(session({
 }));
 app.use(compress());
 
-app.use(passport.initialize());
 
 // custom middleware
 app.use(require('./controllers/sign').auth_user);

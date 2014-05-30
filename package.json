@@ -36,15 +36,6 @@
     "validator": "0.3.7",
     "xss": "~0.0.9"
   },
-  "devDependencies": {
-    "jscover": "*",
-    "mm": "*",
-    "mocha": "*",
-    "pedding": "*",
-    "rewire": "*",
-    "should": "*",
-    "supertest": "*"
-  },
   "scripts": {
     "test": "make test"
   }

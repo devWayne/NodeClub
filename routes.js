@@ -21,7 +21,6 @@ var tools = require('./controllers/tools');
 var auth = require('./middlewares/auth');
 var limit = require('./middlewares/limit');
 var status = require('./controllers/status');
-var search = require('./controllers/search');
 var passport = require('passport');
 var config = require('./config');
 
@@ -31,8 +30,8 @@ module.exports = function (app) {
   app.get('/', site.index);
 
   // sign up, login, logout
-    app.get('/signup', sign.showSignup);
-    app.post('/signup', sign.signup);
+  app.get('/signup', sign.showSignup);
+  app.post('/signup', sign.signup);
  
   app.post('/signout', sign.signout);
   app.get('/signin', sign.showLogin);
@@ -98,10 +97,6 @@ module.exports = function (app) {
   // tools
   app.get('/site_tools', tools.run_site_tools);
 
-  // static
-  app.get('/about', assets.about);
-  app.get('/faq', assets.faq);
-
   //rss
   app.get('/rss', rss.index);
 
@@ -109,5 +104,4 @@ module.exports = function (app) {
   app.get('/status', status.status);
 
 
-  app.get('/search', search.index);
 };
