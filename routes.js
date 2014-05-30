@@ -97,8 +97,6 @@ module.exports = function (app) {
   // tools
   app.get('/site_tools', tools.run_site_tools);
 
-  //rss
-  app.get('/rss', rss.index);
 
   // site status
   app.get('/status', status.status);

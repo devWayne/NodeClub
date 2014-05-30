@@ -51,11 +51,9 @@ exports.index = function (req, res, next) {
 
     topic.visit_count += 1;
     topic.save();
-
     // format date
     topic.friendly_create_at = Util.format_date(topic.create_at, true);
     topic.friendly_update_at = Util.format_date(topic.update_at, true);
-
     topic.author = author;
     topic.replies = replies;
 

@@ -6,16 +6,16 @@ var path = require('path');
 var pkg = require('./package.json');
 
 var config = {
-  debug: true,
-  name: 'CampusWeb',
-  description: 'CampusWeb 是用 Node.js 开发的社区',
+  debug:false,
+  name: '校园互动交流平台',
+  description: '校园互动交流平台',
   version: pkg.version,
 
   // site settings
   site_headers: [
     '<meta name="author" content="EDP@TAOBAO" />',
   ],
-  host: 'localhost.cnodejs.org',
+  host: 'localhost',
   // 默认的Google tracker ID，自有站点请修改，申请地址：http://www.google.com/analytics/
   google_tracker_id: 'UA-41753901-5',
   site_logo: '', // default is `name`
@@ -33,8 +33,8 @@ var config = {
 
   db: 'mongodb://127.0.0.1/nodeclub',
   db_name: 'nodeclub',
-  session_secret: 'node_club',
-  auth_cookie_name: 'node_club',
+  session_secret: 'nodeclub',
+  auth_cookie_name: 'nodeclub',
   port: 3000,
 
   // 话题列表显示的话题数量
@@ -42,17 +42,6 @@ var config = {
 
   // 限制发帖时间间隔，单位：毫秒
   post_interval: 10000,
-
-  // RSS
-  rss: {
-    title: 'CNode：Node.js专业中文社区',
-    link: 'http://cnodejs.org',
-    language: 'zh-cn',
-    description: 'CNode：Node.js专业中文社区',
-
-    //最多获取的RSS Item数量
-    max_rss_items: 50
-  },
 
   // site links
   site_links: [
@@ -95,11 +84,11 @@ var config = {
 
   // mail SMTP
   mail_opts: {
-    host: 'smtp.126.com',
+    host: 'smtp.163.com',
     port: 25,
     auth: {
-      user: 'club@126.com',
-      pass: 'club'
+      user: '',
+      pass: ''
     }
   },
 
@@ -114,13 +103,7 @@ var config = {
     // { name: 'onehost', options: { host: 'localhost.cnodejs.org' } },
     // { name: 'wordpress_redirect', options: {} }
   ],
-  GITHUB_OAUTH: {
-    clientID: 'your GITHUB_CLIENT_ID',
-    clientSecret: 'your GITHUB_CLIENT_SECRET',
-    callbackURL: 'http://cnodejs.org/auth/github/callback',
-  },
-  allow_sign_up: true,
-  newrelic_key: 'yourkey'
+  allow_sign_up: true
 };
 
 module.exports = config;
