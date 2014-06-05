@@ -2,6 +2,7 @@ var Message = require('../proxy').Message;
 var eventproxy = require('eventproxy');
 
 exports.index = function (req, res, next) {
+  debugger;
   if (!req.session.user) {
     res.redirect('home');
     return;

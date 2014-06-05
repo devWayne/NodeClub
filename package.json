@@ -31,7 +31,9 @@
     "response-time": "^1.0.0",
     "static-favicon": "^1.0.2",
     "utility": "0.0.x",
-    "validator": "0.3.7"
+    "validator": "0.3.7",
+    "xss": "~0.0.9"
+
   },
   "scripts": {
     "test": "make test"

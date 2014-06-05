@@ -21,7 +21,6 @@ var tools = require('./controllers/tools');
 var auth = require('./middlewares/auth');
 var limit = require('./middlewares/limit');
 var status = require('./controllers/status');
-var passport = require('passport');
 var config = require('./config');
 
 
