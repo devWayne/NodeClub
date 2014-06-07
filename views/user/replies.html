@@ -14,9 +14,9 @@
 			</div>
 			<% if (typeof(current_user) !== 'undefined' && current_user._id != user._id) { %>
 				<% if (typeof(relation) === 'undefined' || !relation) { %>
-				<button class='btn btn-success follow_btn' action='follow'>加入关注</button>
+				<button class='bn bn-yel bn-sm follow_btn' action='follow'>加入关注</button>
 				<% } else { %>
-				<button class='btn follow_btn' action='un_follow'>取消关注</button>
+				<button class='bn bn-ash bn-sm' action='un_follow'>取消关注</button>
 				<% } %>
 			<% } %>
 			<h2><%= user.name %></h2>

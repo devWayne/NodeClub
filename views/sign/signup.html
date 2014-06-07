@@ -25,37 +25,37 @@
 					<label class='control-label' for='name'>用户名</label>
 					<div class='controls'>
 						<% if (typeof(name) !== 'undefined') { %>
-						<input class='input-xlarge' id='name' name='name' size='30' type='text' value='<%= name %>' />
+						<input class='input-xlarge ip' id='name' name='name' size='30' type='text' value='<%= name %>' />
 						<% } else { %>
-						<input class='input-xlarge' id='name' name='name' size='30' type='text' value='' />
+						<input class='input-xlarge ip' id='name' name='name' size='30' type='text' value='' />
 						<% } %>
 					</div>
 				</div>
 				<div class='control-group'>
 					<label class='control-label' for='pass'>密码</label>
 					<div class='controls'>
-						<input class='input-xlarge' id='pass' name='pass' size='30' type='password' />
+						<input class='input-xlarge ip' id='pass' name='pass' size='30' type='password' />
 					</div>
 				</div>
 				<div class='control-group'>
 					<label class='control-label' for='re_pass'>确认密码</label>
 					<div class='controls'>
-						<input class='input-xlarge' id='re_pass' name='re_pass' size='30' type='password' />
+						<input class='input-xlarge ip' id='re_pass' name='re_pass' size='30' type='password' />
 					</div>
 				</div>
 				<div class='control-group'>
 					<label class='control-label' for='email'>电子邮箱</label>
 					<div class='controls'>
 						<% if (typeof(email) !== 'undefined') { %>
-						<input class='input-xlarge' id='email' name='email' size='30' type='text' value='<%= email %>' />
+						<input class='input-xlarge ip' id='email' name='email' size='30' type='text' value='<%= email %>' />
 						<% } else { %>
-						<input class='input-xlarge' id='email' name='email' size='30' type='text' />
+						<input class='input-xlarge ip' id='email' name='email' size='30' type='text' />
 						<% } %>
 					</div>
 				</div>
 				<input type='hidden' name='_csrf' value='<%= csrf %>' />
 				<div class='form-actions'>
-					<input type='submit' class='btn' value='注册' />
+					<input type='submit' class='bn bn-lg bn-yel' value='注册' />
 				</div>
 			</form>
 			<% } %>
